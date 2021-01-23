@@ -1,0 +1,81 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__questions {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__telephone {
+        color: #fff;
+        font-size: 19px;
+        font-weight: bold;
+        margin-top: 5px;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__burger {
+        display: none;
+    }
+}
+
+.header__body {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    &__logo {
+        img {
+          width: 100%;
+        }
+    }
+    
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    li {
+        padding: 0 14px;
+        border-right: 1px dashed #fff;
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.menu__link {
+    font-size: 15px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+
+    position: relative;
+    &:hover {
+        color: $main-color;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 0%;
+        height: 1px;
+        background-color: $main-color;
+        transition: all 0.5s ease 0s;
+    }
+    &:hover:after {
+        width: 100%;
+    }
+}
