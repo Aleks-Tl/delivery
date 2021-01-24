@@ -100,13 +100,101 @@ h6 {
 
 * {
   font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .promo {
   min-height: 680px;
-  padding-bottom: 80px;
+  padding: 130px 0 70px 0;
   background: url("../img/bg_promo_screen.jpg") no-repeat 50% 15%/cover;
+}
+
+.promo__suptitle {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.promo__title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  color: #ec644b;
+  font-size: 72px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.promo__subtitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.promo__divider_wrapper {
+  position: relative;
+  width: 840px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promo__divider_wrapper:before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+}
+
+.promo__divider {
+  position: relative;
+  width: 390px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.promo__divider span {
+  outline: 1px solid red;
+}
+
+.promo__items {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 140px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.promo__icon {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 70px;
+  grid-auto-rows: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  row-gap: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .button {
@@ -126,10 +214,22 @@ h6 {
           box-shadow: 1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 
+.btn-promo {
+  width: 235px;
+  height: 55px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
+  height: 125px;
   width: 100%;
   z-index: 100;
 }
