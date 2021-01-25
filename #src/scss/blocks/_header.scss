@@ -5,6 +5,15 @@
     height: 125px;
     width: 100%;
     z-index: 100;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(53, 46, 42, 0.8);
+    }
     &__phone {
         display: flex;
         flex-direction: column;
@@ -37,7 +46,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 12px;
     &__logo {
         img {
           width: 100%;

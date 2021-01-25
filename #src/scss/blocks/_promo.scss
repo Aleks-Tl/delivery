@@ -1,6 +1,6 @@
 .promo {
     min-height: 680px;
-    padding: 130px 0 70px 0;
+    padding: 150px 0 70px 0;
     background: url('../img/bg_promo_screen.jpg') no-repeat 50% 15%/cover;
     &__suptitle {
         color: #fff;
@@ -70,8 +70,9 @@
         text-align: center;
         row-gap: 15px;
         color: #fff;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
         text-align: center;
+        line-height: 16px;
     }
 }
