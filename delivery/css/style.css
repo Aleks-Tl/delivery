@@ -350,6 +350,67 @@ h6 {
   width: 100%;
 }
 
+.advent {
+  min-height: 590px;
+  padding: 50px 0;
+  background-color: #f3f3f3;
+}
+
+.advent__items {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, minmax(65px, auto));
+  grid-auto-rows: auto;
+  -webkit-column-gap: 70px;
+     -moz-column-gap: 70px;
+          column-gap: 70px;
+  row-gap: 35px;
+}
+
+.advent-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advent-icon__text {
+  padding-left: 25px;
+}
+
+.advent-icon__text_pl16 {
+  padding-left: 16px;
+}
+
+.advent-icon__title {
+  color: #ec644b;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.advent-icon__descr {
+  color: #3a3a3a;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-top: 7px;
+}
+
+.title {
+  color: #2e2e2e;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -361,6 +422,20 @@ h6 {
 
   .header__phone {
     display: none;
+  }
+
+  .advent__items {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+
+  .advent-icon__text {
+    padding-left: 15px;
+  }
+
+  .advent-icon__text_pl16 {
+    padding-left: 8px;
   }
 }
 
@@ -557,6 +632,10 @@ h6 {
     grid-template-columns: 1fr 1fr;
   }
 
+  .advent__items {
+    grid-template-columns: 1fr;
+  }
+
   .overlay {
     position: fixed;
     width: 100%;
@@ -593,6 +672,10 @@ h6 {
     font-size: 15px;
   }
 
+  .promo__icon div {
+    line-height: 18px;
+  }
+
   .promo__suptitle {
     font-size: 17px;
   }
@@ -603,6 +686,23 @@ h6 {
 
   .promo__subtitle {
     font-size: 20px;
+  }
+
+  .advent-icon {
+    display: block;
+    text-align: center;
+  }
+
+  .advent-icon__text {
+    padding-left: 0;
+  }
+
+  .advent-icon__title {
+    font-size: 18px;
+  }
+
+  .advent-icon__descr {
+    font-size: 16px;
   }
 }
 
