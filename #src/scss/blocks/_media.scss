@@ -25,6 +25,13 @@
             }
         }
     }
+    .ourwork {
+        &-icon {
+            img {
+                
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -204,6 +211,27 @@
             opacity: 1;
         }
     }
+    .ourwork {
+        &__items {
+            display: block;
+        }
+        &-icon {
+            img {
+                display: block;
+                width: 390px;
+                height: 100%;
+                margin: 0 auto;
+            }
+            &__descr {
+                font-size: 14px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            &__descr_mb15 {
+                margin-bottom: 0;
+            }
+        }
+     }
 }
 
 
@@ -251,5 +279,17 @@
             }
         }
     }
-    
+    .ourwork {
+        &__title {
+            font-size: 22px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &-icon {
+            img {
+                width: 300px;
+            }
+        }
+    }
 }

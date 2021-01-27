@@ -445,7 +445,7 @@ h6 {
 
 .ourwork-icon img {
   width: 100%;
-  max-height: 210px;
+  height: 210px;
 }
 
 .ourwork-icon__title {
@@ -706,6 +706,27 @@ h6 {
   .overlay.active {
     opacity: 1;
   }
+
+  .ourwork__items {
+    display: block;
+  }
+
+  .ourwork-icon img {
+    display: block;
+    width: 390px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .ourwork-icon__descr {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .ourwork-icon__descr_mb15 {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -757,6 +778,18 @@ h6 {
 
   .advent-icon__descr {
     font-size: 16px;
+  }
+
+  .ourwork__title {
+    font-size: 22px;
+  }
+
+  .ourwork__subtitle {
+    font-size: 18px;
+  }
+
+  .ourwork-icon img {
+    width: 300px;
   }
 }
 
