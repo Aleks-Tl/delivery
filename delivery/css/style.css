@@ -226,6 +226,12 @@ h6 {
   font-weight: 700;
 }
 
+.btn-price {
+  display: block;
+  margin: 24px auto 0 auto;
+  font-size: 12px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -474,6 +480,103 @@ h6 {
   margin-top: 13px;
 }
 
+.agent {
+  min-height: 340px;
+  padding: 55px 0 75px 0;
+  background: url("../img/bg_agent.jpg") center center/cover no-repeat;
+}
+
+.agent__img {
+  text-align: center;
+}
+
+.agent__title {
+  font-size: 26px;
+  color: #fff;
+  text-transform: none;
+  margin-top: 15px;
+}
+
+.agent__subtitle {
+  font-size: 19px;
+  color: #fff;
+  line-height: 27px;
+  font-weight: 300;
+  margin-top: 22px;
+}
+
+.price {
+  padding: 50px 0 0 0;
+}
+
+.price__subtitle {
+  color: #2e2e2e;
+  line-height: 24px;
+  font-size: 21px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.price .card-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+}
+
+.price .card-items .card-item {
+  width: 267px;
+  height: 357px;
+  padding: 0 0 20px 0;
+  border: 1px solid #eaeaea;
+}
+
+.price .card-items .card-item__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 20px 58px;
+  background-color: #25333c;
+}
+
+.price .card-items .card-item__icon {
+  text-align: center;
+  margin-top: 18px;
+  height: 52px;
+}
+
+.price .card-items .card-item__price {
+  font-size: 14px;
+  line-height: 23px;
+  color: #2e2e2e;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.price .card-items .card-item__price span {
+  display: block;
+  color: #ec644b;
+  font-size: 28px;
+  text-transform: none;
+}
+
+.price .card-items .card-item__descr {
+  color: #2e2e2e;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -499,6 +602,18 @@ h6 {
 
   .advent-icon__text_pl16 {
     padding-left: 8px;
+  }
+
+  .price .card-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .price .card-item {
+    margin: 0 25px 25px 0;
   }
 }
 
@@ -738,6 +853,14 @@ h6 {
   .ourwork-icon__descr_mb15 {
     margin-bottom: 0;
   }
+
+  .price .container {
+    padding: 0 0 0 10px;
+  }
+
+  .price .card-item {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -804,6 +927,16 @@ h6 {
   .ourwork__subtitle {
     font-size: 18px;
   }
+
+  .price .container {
+    padding: 0 20px;
+  }
+
+  .price .card-item {
+    margin-right: 0;
+  }
 }
 
 .webp .promo{ background: url(../img/bg_promo_screen.webp) no-repeat 50% 15%/cover; }
+
+.webp .agent{ background: url(../img/bg_agent.webp) center center/cover no-repeat; }
