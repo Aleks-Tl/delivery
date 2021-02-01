@@ -82,6 +82,13 @@
             font-size: 14px;
         }
     }
+    .consultation {
+        .feed-form {
+            input {
+                width: 225px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -246,6 +253,19 @@
             margin-right: 10px;
         }
     }
+    .consultation {
+        .feed-form {
+            flex-direction: column;
+            min-height: 300px;
+            padding-top: 15px;
+            input {
+                width: 370px;
+                margin-bottom: 15px;
+                text-align: center;
+                
+            }
+        }
+    }
 }
 
 
@@ -315,6 +335,24 @@
         }
         .card-item {
             margin-right: 0;
+        }
+    }
+    .consultation {
+        &__title {
+            font-size: 26px;
+            margin-top: 25px;
+        }
+        &__img {
+            top: 85px;
+        }
+        .feed-form {
+            min-height: 300px;
+            input {
+                width: 280px;
+                margin-bottom: 15px;
+                text-align: center;
+                
+            }
         }
     }
 }

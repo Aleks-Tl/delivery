@@ -56,7 +56,7 @@ function browserSync(params) {
         },
         port: 3000,
         notify: false
-    })
+    });
 }
 
 function html() {
@@ -64,7 +64,7 @@ function html() {
     .pipe(fileinclude())
     .pipe(webphtml())
     .pipe(dest(path.build.html))
-    .pipe(browsersync.stream())
+    .pipe(browsersync.stream());
 }
 
 function css() {
@@ -79,6 +79,7 @@ function css() {
     )
     .pipe(
         autoprefixer({
+            grid: true,
             overrideBrowserslist: ["last 5 version"],
             cascade: true
         })
@@ -147,7 +148,7 @@ gulp.task('otf2ttf', function() {
         formats: ['ttf']
     }))
     .pipe(dest(source_folder + '/fonts/'));
-})
+});
 
 gulp.task('svgSprite', function() {
     return gulp.src([source_folder + '/iconsprite/*.svg'])
@@ -160,7 +161,7 @@ gulp.task('svgSprite', function() {
         },
     }))
     .pipe(dest(path.build.img))
-})
+});
 
 function fontsStyle(params) {
 
@@ -179,7 +180,7 @@ function fontsStyle(params) {
                 c_fontname = fontname;
                 }
             }
-        })
+        });
       }
     }
     

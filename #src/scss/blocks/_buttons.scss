@@ -27,3 +27,19 @@
     margin: 24px auto 0 auto;
     font-size: 12px;
 }
+.button_wrap {
+    position: absolute;
+    padding: 0 10px;
+    background: #fff;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-consultation {
+    width: 180px;
+    height: 45px;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+}

@@ -1,0 +1,37 @@
+.consultation {
+    padding-bottom: 58px;
+    &__title {
+        margin-top: 55px;
+    }
+    &__img {
+        position: absolute;
+        top: 33px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        padding: 10px;
+    }
+    .feed-form {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 71px;
+        width: 100%;
+        height: 166px;
+        border: 1px solid #898989;
+        z-index: -100;
+        input {
+            width: 270px;
+            height: 47px;
+            background-color: #ffffff;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 25px;
+            padding: 19px 29px;
+            margin-right: 4px;
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+        }
+    }
+}
