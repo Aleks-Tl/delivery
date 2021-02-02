@@ -663,6 +663,83 @@ h6 {
   margin-right: 0;
 }
 
+.menager {
+  min-height: 340px;
+  padding: 55px 0 75px 0;
+  background: url("../img/bg_menager.jpg") center center/cover no-repeat;
+}
+
+.menager__img {
+  text-align: center;
+}
+
+.menager__title {
+  font-size: 26px;
+  color: #fff;
+  text-transform: none;
+  margin-top: 15px;
+}
+
+.menager__subtitle {
+  font-size: 19px;
+  color: #fff;
+  line-height: 27px;
+  font-weight: 300;
+  margin-top: 22px;
+}
+
+.scheme {
+  padding: 51px 0 46px 0;
+  min-height: 454px;
+  background-color: #f3f3f3;
+}
+
+.scheme__items {
+  margin-top: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.scheme__items .item-scheme {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 50px 29px 70px;
+  grid-template-rows: 50px 29px 70px;
+  text-align: center;
+  width: 250px;
+}
+
+.scheme__items .item-scheme__img {
+  height: 50px;
+}
+
+.scheme__items .item-scheme__title {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ec644b;
+}
+
+.scheme__items .item-scheme__subtitle {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #3a3a3a;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -700,6 +777,10 @@ h6 {
 
   .price .card-item {
     margin: 0 25px 25px 0;
+  }
+
+  .scheme .scheme__items .item-scheme {
+    margin-bottom: 15px;
   }
 }
 
@@ -1050,7 +1131,7 @@ h6 {
   }
 
   .consultation__img {
-    top: 85px;
+    top: -60px;
   }
 
   .consultation .feed-form {
@@ -1062,8 +1143,14 @@ h6 {
     margin-bottom: 15px;
     text-align: center;
   }
+
+  .scheme__title {
+    font-size: 24px;
+  }
 }
 
 .webp .promo{ background: url(../img/bg_promo_screen.webp) no-repeat 50% 15%/cover; }
 
 .webp .agent{ background: url(../img/bg_agent.webp) center center/cover no-repeat; }
+
+.webp .menager{ background: url(../img/bg_menager.webp) center center/cover no-repeat; }
