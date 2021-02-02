@@ -96,6 +96,11 @@
             }
         }
     }
+    .review {
+        &__subtitle {
+            font-size: 19px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -273,6 +278,15 @@
             }
         }
     }
+    .review {
+        padding-bottom: 45px;
+        .carousel {
+            width: 80%;
+            .slick-prev, .slick-next {
+                opacity: 0;
+            }
+        }
+    }
 }
 
 
@@ -366,5 +380,8 @@
         &__title {
             font-size: 24px;
         }
+    }
+    .review {
+        display: none;
     }
 }

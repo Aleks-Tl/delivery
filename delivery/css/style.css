@@ -740,6 +740,66 @@ h6 {
   color: #3a3a3a;
 }
 
+.review {
+  min-height: 470px;
+  padding: 51px 0 65px 0;
+}
+
+.review__subtitle {
+  color: #2e2e2e;
+  font-weight: 300;
+  font-size: 21px;
+  text-align: center;
+  line-height: 24px;
+  max-width: 890px;
+  margin: 0 auto;
+}
+
+.review .carousel {
+  position: relative;
+  width: 600px;
+  margin: 31px auto 0 auto;
+}
+
+.review .carousel img {
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.review .carousel__title {
+  margin-top: 25px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #3a3a3a;
+  text-align: center;
+}
+
+.review .carousel__descr {
+  font-size: 14.1px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 12px;
+}
+
+.review .slick-next,
+.review .slick-prev {
+  background-color: #fff;
+  position: absolute;
+  top: 40px;
+  z-index: 5;
+}
+
+.review .slick-prev {
+  left: 150px;
+}
+
+.review .slick-next {
+  left: auto;
+  right: 160px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -840,6 +900,10 @@ h6 {
 
   .consultation .feed-form input {
     width: 225px;
+  }
+
+  .review__subtitle {
+    font-size: 19px;
   }
 }
 
@@ -1049,6 +1113,19 @@ h6 {
     margin-bottom: 15px;
     text-align: center;
   }
+
+  .review {
+    padding-bottom: 45px;
+  }
+
+  .review .carousel {
+    width: 80%;
+  }
+
+  .review .carousel .slick-prev,
+  .review .carousel .slick-next {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1146,6 +1223,10 @@ h6 {
 
   .scheme__title {
     font-size: 24px;
+  }
+
+  .review {
+    display: none;
   }
 }
 

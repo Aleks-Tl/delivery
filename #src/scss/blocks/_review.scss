@@ -1,0 +1,50 @@
+.review {
+    min-height: 470px;
+    padding: 51px 0 65px 0;
+    &__subtitle {
+        color: #2e2e2e;
+        font-weight: 300;
+        font-size: 21px;
+        text-align: center;
+        line-height: 24px;
+        max-width: 890px;
+        margin: 0 auto;
+    }
+    .carousel {
+        position: relative;
+        width: 600px;
+        margin: 31px auto 0 auto;
+        img {
+            margin: 0 auto;
+            border-radius: 100%;
+        }
+        &__title {
+            margin-top: 25px;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            color: #3a3a3a;
+            text-align: center;
+        }
+        &__descr {
+            font-size: 14.1px;
+            font-weight: 300;
+            text-align: center;
+            line-height: 20px;
+            margin-top: 12px;
+        }
+    }
+    .slick-next, .slick-prev {
+        background-color: #fff;
+        position: absolute;
+        top: 40px;
+        z-index: 5;
+    }
+    .slick-prev {
+        left: 150px;   
+    }
+    .slick-next {
+        left: auto;
+        right: 160px;
+    }
+}
