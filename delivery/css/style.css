@@ -258,6 +258,14 @@ h6 {
   font-weight: 400;
 }
 
+.btn-questions {
+  margin: 16px auto 0 auto;
+  width: 180px;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -572,6 +580,31 @@ h6 {
   border: 1px solid #eaeaea;
 }
 
+.price .card-items .card-item__list {
+  color: #2e2e2e;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  position: relative;
+  padding-top: 70px;
+}
+
+.price .card-items .card-item__list li {
+  margin-bottom: 10px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.price .card-items .card-item__list li:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 5px;
+  height: 5px;
+  background: #ec644b;
+}
+
 .price .card-items .card-item__title {
   font-size: 16px;
   text-transform: uppercase;
@@ -800,6 +833,181 @@ h6 {
   right: 160px;
 }
 
+.questions {
+  min-height: 438px;
+  padding: 62px 0 0 0;
+  background: url("../img/bg_questions.jpg") center center/cover;
+}
+
+.questions__wrap {
+  width: 896px;
+  margin: 0 auto;
+}
+
+.questions__title {
+  background-color: #25333c;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.questions__title span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.questions .feed-form_bottom {
+  padding: 17px 30px 25px 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.questions .feed-form_bottom input {
+  padding: 0 28px;
+  border-radius: 25px;
+  width: 270px;
+  height: 47px;
+}
+
+.questions .feed-form_bottom textarea {
+  resize: none;
+  margin-top: 6px;
+  width: 100%;
+  height: 73px;
+  border-radius: 8px;
+  padding: 19px 0 0 25px;
+}
+
+.footer {
+  height: 201px;
+  background-color: #25333c;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 0 15px 15px;
+  border-bottom: 1px solid #667076;
+}
+
+.footer__body .btn-footer {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.footer__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 200px;
+}
+
+.footer__questions {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.footer__telephone {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer__bottom {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__copyright {
+  opacity: 0.6;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #ffffff;
+  display: block;
+  margin-left: 5px;
+}
+
+.footer__polityc {
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 300;
+  text-decoration: underline;
+  color: #ec644b;
+  -webkit-transform: translateX(-300px);
+      -ms-transform: translateX(-300px);
+          transform: translateX(-300px);
+}
+
+.footer__createsite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__createsite a {
+  opacity: 0.6;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.footer__createsite img {
+  margin-left: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -841,6 +1049,14 @@ h6 {
 
   .scheme .scheme__items .item-scheme {
     margin-bottom: 15px;
+  }
+
+  .footer__phone {
+    margin-left: 0;
+  }
+
+  .questions__wrap {
+    height: 480px;
   }
 }
 
@@ -904,6 +1120,24 @@ h6 {
 
   .review__subtitle {
     font-size: 19px;
+  }
+
+  .questions__wrap {
+    width: 720px;
+  }
+
+  .questions .feed-form_bottom input {
+    width: 215px;
+  }
+
+  .footer__title {
+    display: none;
+  }
+
+  .footer__polityc {
+    -webkit-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+            transform: translateX(-50px);
   }
 }
 
@@ -1051,20 +1285,20 @@ h6 {
     grid-template-columns: 1fr;
   }
 
-  .overlay {
+  .overlay.active {
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.7);
     z-index: 20;
+    background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     -webkit-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
     transition: all 0.6s ease;
   }
 
-  .overlay.active {
+  .overlay.active.active {
     opacity: 1;
   }
 
@@ -1125,6 +1359,40 @@ h6 {
   .review .carousel .slick-prev,
   .review .carousel .slick-next {
     opacity: 0;
+  }
+
+  .questions__wrap {
+    width: 100%;
+  }
+
+  .questions .feed-form_bottom {
+    display: block;
+  }
+
+  .questions .feed-form_bottom input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .questions .feed-form_bottom input:nth-child(3) {
+    margin-bottom: 20px;
+  }
+
+  .questions .feed-form_bottom .btn-questions {
+    margin: 16px 0 0 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .footer__createsite {
+    display: none;
+  }
+
+  .footer__polityc {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -1228,6 +1496,22 @@ h6 {
   .review {
     display: none;
   }
+
+  .footer__body {
+    padding: 24px 0 12px 0;
+  }
+
+  .footer .btn-footer {
+    display: none;
+  }
+
+  .footer__polityc {
+    text-align: right;
+  }
+
+  .questions .feed-form_bottom {
+    padding: 17px 15px 25px 15px;
+  }
 }
 
 .webp .promo{ background: url(../img/bg_promo_screen.webp) no-repeat 50% 15%/cover; }
@@ -1235,3 +1519,5 @@ h6 {
 .webp .agent{ background: url(../img/bg_agent.webp) center center/cover no-repeat; }
 
 .webp .menager{ background: url(../img/bg_menager.webp) center center/cover no-repeat; }
+
+.webp .questions{ background: url(../img/bg_questions.webp) center center/cover; }

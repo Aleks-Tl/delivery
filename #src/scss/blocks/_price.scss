@@ -13,10 +13,12 @@
         align-items: center;
         margin-top: 35px;
         .card-item {
+            //overflow: hidden;
             width: 267px;
             height: 357px;
             padding: 0 0 20px 0;
             border: 1px solid #eaeaea;
+            }
             &__title {
                 font-size: 16px;
                 text-transform: uppercase;
@@ -54,4 +56,5 @@
             }
         }
     }
+    
 }
