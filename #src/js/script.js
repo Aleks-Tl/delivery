@@ -56,4 +56,15 @@ $(document).ready(function(){
             // instead of a settings object
           ]
     });
+    $('.btn-price').each(function(i) {
+      $(this).on('click', function(e) {
+        e.preventDefault();
+        $('.card-item__wrap_descr').eq(i).toggleClass('card-item__wrap_descr-active');
+        $('.card-item__hover').eq(i).toggleClass('card-item__hover_active');
+       });
+    });
   });
+
+ 
+  
+ 

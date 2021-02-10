@@ -23,6 +23,10 @@
     }
 }
 .btn-price {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
     margin: 24px auto 0 auto;
     font-size: 12px;

@@ -13,11 +13,28 @@
         align-items: center;
         margin-top: 35px;
         .card-item {
-            //overflow: hidden;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
             width: 267px;
             height: 357px;
             padding: 0 0 20px 0;
             border: 1px solid #eaeaea;
+
+            transition: all 0.5s ease 0s;
+            &__wrap {
+                display: flex;
+                width: calc(200% + 20px);
+                &_descr {
+                    width: 50%;
+                    margin-right: 25px;
+                    transform: translateX(-100%);
+
+                    transition: all 0.4s ease 0s;
+                    &-active {
+                        transform: translateX(0%);
+                    }
+                }
             }
             &__title {
                 font-size: 16px;
@@ -31,6 +48,9 @@
                 text-align: center;
                 margin-top: 18px;
                 height: 52px;
+
+                transition: all 0.3s ease;
+                
             }
             &__price {
                 font-size: 14px;
@@ -39,6 +59,8 @@
                 text-align: center;
                 text-transform: uppercase;
                 margin-top: 15px;
+                
+                transition: all 0.3s ease;
                 span {
                     display: block;
                     color: $main-color;
@@ -53,8 +75,41 @@
                 line-height: 20px;
                 text-align: center;
                 margin-top: 20px;
+
+                transition: all 0.3s ease;
+            }
+            &__hover {
+                width: 50%;
+                transition: all 0.4s ease 0s;
+                &_active {
+                    transform: translateX(-100%);
+                    margin-left: -15px;
+                }
+            }
+                      
+            &__list {
+                //width: 100%;
+                padding: 20px 15px 0 15px;
+                list-style: none;
+                li {
+                    position: relative;
+                    padding-left: 20px;
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #2e2e2e;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 7px;
+                        left: 0;
+                        border-radius: 100%;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main-color;
+                    }
+                }
             }
         }
     }
-    
-}
+} 
