@@ -28,7 +28,7 @@
             <div class="header__questions">Есть вопросы?</div>
             <a href="tel:+79264230100" class="header__telephone">+7 (926) 423 01 00</a>
         </div>
-        <button class="button btn-top">Перезвоните мне</button>
+        <button data-modal="call_back" class="button btn-top">Перезвоните мне</button>
         <div class="header__burger">
             <span></span>
         </div>
@@ -261,9 +261,9 @@
             
             <form id="form-consultation" action="#" class="feed-form">
                 <div class="consultation__img"><img src="img/icons/consultation_icon.png" alt="menager"></div>
-                <input type="text" name="name" placeholder="Ваше имя...">
-                <input type="tel" name="phone" placeholder="Ваш номер телефона...">
-                <input type="email" name="email" placeholder="Ваш e-mail...">
+                <div class="feed-form__wrap"><input type="text" name="name" placeholder="Ваше имя..."></div>
+                <div class="feed-form__wrap"><input type="tel" name="phone" placeholder="Ваш номер телефона..."></div>
+                <div class="feed-form__wrap"><input type="email" name="email" placeholder="Ваш e-mail..."></div>
                 <div class="button_wrap"><button class="button btn-consultation">Отправить заявку</button></div>
             </form>
         </div>
@@ -349,9 +349,9 @@
             <div class="questions__wrap">
                 <div class="questions__title">Остались вопросы?<br><span>Напишите нам!</span></div>
                 <form id="form-questions" action="#" class="feed-form_bottom">
-                    <input type="text" name="name" placeholder="Ваше имя...">
-                    <input type="tel" name="phone" placeholder="Ваш номер телефона...">
-                    <input type="email" name="email" placeholder="Ваш e-mail...">
+                    <div class="feed-form_bottom-wrap"><input type="text" name="name" placeholder="Ваше имя..."></div>
+                    <div class="feed-form_bottom-wrap"><input type="tel" name="phone" placeholder="Ваш номер телефона..."></div>
+                    <div class="feed-form_bottom-wrap"><input type="email" name="email" placeholder="Ваш e-mail..."></div>
                     <textarea name="text" placeholder="Сообщение..."></textarea>
                     <button class="button btn-questions">Отправить заявку</button>
                 </form>
@@ -370,7 +370,7 @@
                  <div class="footer__questions">Есть вопросы?</div>
                  <a href="tel:+79264230100" class="footer__telephone">+7 (926) 423 01 00</a>
              </div>
-             <button class="button btn-footer">Перезвоните мне</button>
+             <button data-modal="call_back" class="button btn-footer">Перезвоните мне</button>
          </div>
          <div class="footer__bottom">
              <a  class="footer__copyright" href="#">&#169 2010 Scratch.com.ua</a><
@@ -381,11 +381,26 @@
         </div>
         </div>
     </footer>
+
+    <div class="overlay__modal">
+        <div class="modal">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title title">Заказать бесплатную консультацию</div>
+            
+            <form id="modal__call-back" action="#" class="modal__feed-form">
+                <input type="text" name="name" placeholder="Ваше имя...">
+                <input type="tel" name="phone" placeholder="Ваш номер телефона...">
+                <input type="email" name="email" placeholder="Ваш e-mail...">
+                <button class="button modal__button">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
     <div class="overlay"></div>
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
     <script src="js/script.min.js"></script>
 </body>
 </html>

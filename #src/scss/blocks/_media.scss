@@ -296,11 +296,12 @@
     .consultation {
         .feed-form {
             flex-direction: column;
-            min-height: 300px;
+            justify-content: center;
+            min-height: 350px;
             padding-top: 15px;
             input {
                 width: 370px;
-                margin-bottom: 15px;
+                margin-bottom: 5px;
                 text-align: center;
                 
             }
@@ -321,6 +322,9 @@
         }
         .feed-form_bottom {
             display: block;
+            label.error {
+                margin-bottom: 5px;     
+            }
             input {
                 width: 100%;
                 margin-bottom: 10px;
@@ -422,12 +426,15 @@
             top: -60px;
         }
         .feed-form {
-            min-height: 300px;
+            min-height: 340px;
             input {
                 width: 280px;
-                margin-bottom: 15px;
+                margin-bottom: 5px;
                 text-align: center;
                 
+            }
+            label.error {
+                margin-top: 2px;
             }
         }
     }
@@ -443,7 +450,7 @@
         &__body {
             padding: 24px 0 12px 0; 
         }
-        .btn-footer {
+        &__phone {
             display: none;
         }
         &__polityc {
@@ -451,8 +458,21 @@
         }
     }
     .questions {
+        min-height: 580px;
         .feed-form_bottom {
+             
             padding: 17px 15px 25px 15px;
+        }
+    }
+    .modal {
+        width: 280px;
+    }
+    .modal {
+        margin-left: -9px;
+        &__close {
+            top: -45px;
+            right: auto;
+            left: 250px;
         }
     }
 }

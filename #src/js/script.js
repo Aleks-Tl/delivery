@@ -63,6 +63,60 @@ $(document).ready(function(){
         $('.card-item__hover').eq(i).toggleClass('card-item__hover_active');
        });
     });
+    $('[data-modal=call_back]').on('click', function() {
+      $('.overlay__modal, #modal__call-back').fadeIn('slow');
+    $('.modal__close').on('click', function() {
+      $('.overlay__modal, #modal__call-back').fadeOut();
+    });
+    });
+
+    /* function validateForms(form) {
+      $(form).validate({
+        rules: {
+          name: "required",
+          email: {
+            required: true,
+            email: true,
+            },
+            phone: true
+        },
+        messages: {
+          name: "Введите пожалуйста имя",
+          email: {
+            required: "Введите пожалйуста свой E-mail",
+            email: "Ваш e-mail должен быть в формате: name@domain.com"
+          },
+          phone: "Введите свой телефон"        
+        }
+      });
+    } */
+    function valideForms(form) {
+      $(form).validate({
+        rules: {
+          name: {
+            required: true,
+            minlength: 2
+          },
+          phone: "required",
+          email: {
+            required: true,
+            email: true
+          }
+        },
+      messages: {
+        name:  "Введите пожалуйста имя",
+        phone: "Пожалуйста, введите номер телефона",
+        email: {
+              required: "Пожалуйста, введите свою почту",
+              email: "Неправильно ввели свою почту"
+        }
+      }
+      });
+    }
+
+    valideForms('#modal__call-back');
+    valideForms('#form-consultation');
+    valideForms('#form-questions');
   });
 
  
