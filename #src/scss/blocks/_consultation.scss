@@ -39,12 +39,16 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            .error {
+                border: 1px solid red;
+            }
             label.error {
                 margin-top: 5px;
                 text-align: center;
                 color: red;
                 font-style: italic;
                 font-size: 12px;
+                border: none;
             }           
         }
         /* label.error {

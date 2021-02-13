@@ -160,7 +160,7 @@ gulp.task('svgSprite', function() {
             }
         },
     }))
-    .pipe(dest(path.build.img))
+    .pipe(dest(path.build.img));
 });
 
 function fontsStyle(params) {

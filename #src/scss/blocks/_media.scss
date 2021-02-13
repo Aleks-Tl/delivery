@@ -475,4 +475,19 @@
             left: 250px;
         }
     }
+    .modal-calc {
+        width: 300px;
+        height: 480px;
+        margin-left: -10px;
+        &__title {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        &__close {
+            right: auto;
+            left: 90%;
+            top: 0px;
+            font-size: 35px;
+        }
+    }
 }
