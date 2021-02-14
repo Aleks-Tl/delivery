@@ -4,7 +4,7 @@
     height: 100%;
     top: 0;
     background-color: rgba(0,0,0,.56);
-    z-index: 50;
+    //z-index: 50;
 }
 
 .modal {
@@ -17,14 +17,12 @@
     width: 300px;
     min-height: 410px;
     background: #fff;
-    z-index: 160;
     border-radius: 10px;
     &__title {
         margin-top: 20px;
         text-align: center;
         font-size: 20px;
         line-height: 26px;
-        //color: #2e2e2e;
         color: $main-color;
         text-transform: uppercase;
     }
@@ -37,7 +35,6 @@
             padding: 12px 20px;
             display: block;
             margin: 0 auto;
-            //border: 1px solid #a7a0a0;
             margin-bottom: 12px;
             border-radius: 15px;
         }
@@ -151,7 +148,44 @@
         color: #fff;
     }
 }
-
+.modal__thanks {
+    display: none;
+    position: absolute;
+    border: 1px solid $main-color;
+    box-shadow: inset 3px 3px 10px $main-color, inset -3px -3px 10px $main-color;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    min-height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+.modal__title-thanks {
+    text-align: center;
+    margin-top: 20px;
+    color: $main-color;
+    font-size: 20px;
+    
+    line-height: 20px;
+}
+.modal__subtitle-thanks {
+    text-align: center;
+    margin-top: 20px;
+    color: #2e2e2e;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.modal__close-thanks {
+    position: absolute;
+    right: -35px;
+    top: -10px;
+    font-size: 50px;
+    color: $main-color;
+    cursor: pointer;
+}
 input[type='range'] {
     //overflow: hidden;
     //width: 80px;

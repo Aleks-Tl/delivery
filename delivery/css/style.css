@@ -102,6 +102,15 @@ h6 {
   font-family: 'Roboto', sans-serif;
 }
 
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+
 .promo {
   min-height: 680px;
   padding: 150px 0 70px 0;
@@ -1127,7 +1136,6 @@ h6 {
   height: 100%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.56);
-  z-index: 50;
 }
 
 .modal {
@@ -1143,7 +1151,6 @@ h6 {
   width: 300px;
   min-height: 410px;
   background: #fff;
-  z-index: 160;
   border-radius: 10px;
 }
 
@@ -1300,6 +1307,50 @@ h6 {
   border-radius: 6px;
   background-color: #ec644b;
   color: #fff;
+}
+
+.modal__thanks {
+  display: none;
+  position: absolute;
+  border: 1px solid #ec644b;
+  -webkit-box-shadow: inset 3px 3px 10px #ec644b, inset -3px -3px 10px #ec644b;
+          box-shadow: inset 3px 3px 10px #ec644b, inset -3px -3px 10px #ec644b;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 300px;
+  min-height: 150px;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal__title-thanks {
+  text-align: center;
+  margin-top: 20px;
+  color: #ec644b;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.modal__subtitle-thanks {
+  text-align: center;
+  margin-top: 20px;
+  color: #2e2e2e;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.modal__close-thanks {
+  position: absolute;
+  right: -35px;
+  top: -10px;
+  font-size: 50px;
+  color: #ec644b;
+  cursor: pointer;
 }
 
 input[type='range'] {

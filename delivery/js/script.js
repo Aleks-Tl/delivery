@@ -22,6 +22,7 @@ $(document).ready(function() {
         $('.header__burger, .menu__list, .overlay').toggleClass('active');
     });
 });
+// Слайдер
 
 $(document).ready(function(){
     $('.carousel').slick({
@@ -56,6 +57,8 @@ $(document).ready(function(){
             // instead of a settings object
           ]
     });
+
+    // Модальные окна
     $('.btn-price').each(function(i) {
       $(this).on('click', function(e) {
         e.preventDefault();
@@ -65,8 +68,8 @@ $(document).ready(function(){
     });
     $('[data-modal=call_back]').on('click', function() {
       $('.overlay__modal, #modal__call-back').fadeIn('slow');
-    $('.modal__close').on('click', function() {
-      $('.overlay__modal, #modal__call-back').fadeOut();
+    $('.modal__close, .modal__close-thanks').on('click', function() {
+      $('.overlay__modal, #modal__call-back, #thanks').fadeOut();
     });
     });
 
@@ -98,6 +101,9 @@ $(document).ready(function(){
         }
       });
     } */
+
+    // Валидация форм
+
     function valideForms(form) {
       $(form).validate({
         rules: {
@@ -126,6 +132,8 @@ $(document).ready(function(){
     valideForms('#form-consultation');
     valideForms('#form-questions');
   });
+  
+// Калькулятор расчета стоимости доставки груза
 
   var btn = document.querySelector('#btn'),
     out = document.querySelector('#out'),
@@ -144,7 +152,7 @@ $(document).ready(function(){
  // range slider
     range.onchange = function(){
       var rasstoyanie = document.querySelector('.rasstoyanie').innerHTML = range.value;
-    }
+    };
   // Basic function  
 btn.onclick = function(){
   if (weight.value != '' && vol.value != '') {
@@ -172,7 +180,48 @@ var sum = (weight.value * kg) + (vol.value * kub) + Number(load.value) + + Numbe
   }else{
 alert('Введите вес и объем груза');
 }
-}
+};
+
+//Маска номера телефона
+
+$('input[name=phone]').mask('+38(999)-999-99-99');
+
+// Плавный скролл 
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1600) {
+    $('.pageup').fadeIn();
+  } else {
+    $('.pageup').fadeOut();
+  }
+});
+
+$("a[href^='#']").click(function() {
+  let _href = $(this).attr("href");
+  $("html, body").animate({scrollTop:$(_href).offset().top+"px"});
+  return false;
+});
+
+
+// Mailer 
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+    type: "POST",
+    url: "mailer/smart.php",
+    data: $(this).serialize()
+  }).done(function() {
+    $(this).find("input").val(" ");
+    $('#modal__call').fadeOut();
+    $('.overlay, #thanks').fadeIn('slow');
+    $('form').trigger('reset');
+  });
+  return false;
+});
+
+
+
 
  
   
