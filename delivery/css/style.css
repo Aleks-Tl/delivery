@@ -919,7 +919,7 @@ h6 {
   background-color: #fff;
   position: absolute;
   top: 40px;
-  z-index: 5;
+  z-index: 1;
 }
 
 .review .slick-prev {
@@ -1136,6 +1136,7 @@ h6 {
   height: 100%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.56);
+  z-index: 2;
 }
 
 .modal {

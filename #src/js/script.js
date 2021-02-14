@@ -213,12 +213,13 @@ $('form').submit(function(e) {
     data: $(this).serialize()
   }).done(function() {
     $(this).find("input").val(" ");
-    $('#modal__call').fadeOut();
-    $('.overlay, #thanks').fadeIn('slow');
+    $('#modal__call-back, .modal, .overlay').fadeOut();
+    $('#thanks').fadeIn('slow');
     $('form').trigger('reset');
   });
   return false;
 });
+
 
 
 
