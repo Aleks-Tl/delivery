@@ -490,4 +490,20 @@
             font-size: 35px;
         }
     }
+    .modal {
+        &__close {
+            top: auto;
+            right: auto;
+            left: 240px;
+            bottom: 0px;
+        }
+    }
+    .modal-calc {
+        &__close {
+            right: 0;
+            top: auto;
+            bottom: 0px;
+            font-size: 40px;
+        }
+    }
 }
