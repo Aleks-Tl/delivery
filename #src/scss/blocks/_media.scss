@@ -346,6 +346,20 @@
             transform: translateX(0);
         }
     }
+    body.lock {
+        overflow: hidden;
+      }
+      .menu__link {
+        &:after {
+            content: '';
+            width: 0%;
+            
+        }
+        &:hover:after {
+            width: 0%;
+        }
+    }
+    
 }
 
 
@@ -356,6 +370,17 @@
     }
     .header__body {
         width: 100%;
+        .menu__list {
+            width: 100%;
+            margin-top: 5px;
+            li {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+        .menu__link {
+            font-size: 25px!important;
+        }
     }
     .promo {
         &__items {
@@ -468,7 +493,6 @@
         width: 280px;
     }
     .modal {
-        margin-left: -9px;
         &__close {
             top: -45px;
             right: auto;
@@ -478,7 +502,6 @@
     .modal-calc {
         width: 300px;
         height: 480px;
-        margin-left: -10px;
         &__title {
             font-size: 24px;
             margin-top: 10px;
@@ -505,5 +528,9 @@
             bottom: 0px;
             font-size: 40px;
         }
+    }
+    .pageup {
+        bottom: 20px;
+        right: 30px;
     }
 }
